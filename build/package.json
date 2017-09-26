@@ -1,0 +1,9 @@
+{
+ "name": "MarkdownPreview",
+ "version": "1.0.0",
+ "author": "Simon Weller",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}
