@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      markdown: String
+      markdown: "__Why not write some markdown?__"
     }
   }
 

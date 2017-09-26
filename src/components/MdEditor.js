@@ -9,7 +9,7 @@ class MdEditor extends React.Component {
   render() {
     return (
       <form>
-        <textarea className="form-control" rows="20" ref={(input) => this.markdown = input} onInput={this.editMarkdown.bind(this)}>
+        <textarea className="form-control" rows="20" ref={(input) => this.markdown = input} onInput={this.editMarkdown.bind(this)} defaultValue="__Why not write some markdown?__">
 
         </textarea>
       </form>
