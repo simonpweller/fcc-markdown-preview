@@ -12,7 +12,7 @@ const App = () => {
             <h1>Markdown Previewer</h1>
             <div className="row">
                 <div className="col-xs-12 col-sm-6">
-                    <MdEditor markdown={markdown} editMarkdown={setMarkdown}/>
+                    <MdEditor markdown={markdown} setMarkdown={setMarkdown} />
                 </div>
                 <div className="col-xs-12 col-sm-6">
                     <MdDisplay markdown={markdown}/>
