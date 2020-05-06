@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.4.1",
+    "dompurify": "^2.0.10",
     "marked": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

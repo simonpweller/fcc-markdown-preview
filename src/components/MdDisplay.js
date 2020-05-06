@@ -1,18 +1,14 @@
 import React from 'react';
 import marked from 'marked';
+import DOMPurify from 'dompurify';
 
-class MdDisplay extends React.Component {
+const MdDisplay = ({markdown}) => {
+  const html = marked(markdown)
+  const cleanHtml = DOMPurify.sanitize(html);
 
-  getMarkdownText() {
-    return { __html: marked(this.props.markdown, {sanitize: true})}
-  }
-
-  render() {
-    if (typeof this.props.markdown === 'string') {
-      return <div dangerouslySetInnerHTML={this.getMarkdownText()}></div>
-    }
-    return <p>Nothing to render</p>
-  }
+  return (
+      <div dangerouslySetInnerHTML={{__html: marked(cleanHtml)}}/>
+  )
 }
 
 export default MdDisplay;
