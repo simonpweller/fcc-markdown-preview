@@ -3,11 +3,11 @@ import marked from 'marked';
 import DOMPurify from 'dompurify';
 
 const MdDisplay = ({markdown}) => {
-  const html = marked(markdown)
+  const html = marked(markdown, {breaks: true});
   const cleanHtml = DOMPurify.sanitize(html);
 
   return (
-      <div dangerouslySetInnerHTML={{__html: marked(cleanHtml)}}/>
+      <div id="preview" dangerouslySetInnerHTML={{__html: marked(cleanHtml)}}/>
   )
 }
 

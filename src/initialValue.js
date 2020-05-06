@@ -1,35 +1,47 @@
-const initialValue = `Heading
-=======
+const initialValue = `
+# Welcome to my React Markdown Previewer!
 
-Sub-heading
------------
+## This is a sub-heading...
+### And here's some other cool stuff:
+  
+Heres some code, \`<div></div>\`, between 2 backticks.
 
-### Another deeper heading
+\`\`\`
+// this is multi-line code:
 
-Paragraphs are separated
-by a blank line.
+function anotherExample(firstLine, lastLine) {
+  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
+    return multiLineCode;
+  }
+}
+\`\`\`
+  
+You can also make text **bold**... whoa!
+Or _italic_.
+Or... wait for it... **_both!_**
+And feel free to go crazy ~~crossing stuff out~~.
 
-Leave 2 spaces at the end of a line to do a
-line break
+There's also [links](https://www.freecodecamp.com), and
+> Block Quotes!
 
-Text attributes *italic*, **bold**,
-\`monospace\`, ~~strikethrough~~ .
+And if you want to get really crazy, even tables:
 
-Shopping list:
+Wild Header | Crazy Header | Another Header?
+------------ | ------------- | ------------- 
+Your content can | be here, and it | can be here....
+And here. | Okay. | I think we get it.
 
-* apples
-* oranges
-* pears
+- And of course there are lists.
+  - Some are bulleted.
+     - With different indentation levels.
+        - That look like this.
 
-Numbered list:
 
-1. apples
-2. oranges
-3. pears
+1. And there are numbererd lists too.
+1. Use just 1s if you want! 
+1. But the list goes on...
+- Even if you use dashes or asterisks.
+* And last but not least, let's not forget embedded images:
 
-The rain---not the reign---in
-Spain.
-
-*[Herman Fassett](https://freecodecamp.com/hermanfassett)*`
-
+![React Logo w/ Text](https://goo.gl/Umyytc)`
 export default initialValue;
